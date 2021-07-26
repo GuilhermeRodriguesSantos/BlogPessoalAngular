@@ -1,0 +1,44 @@
+.posicao{
+    text-align: center;
+}
+
+.texto{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.texto2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.posicao-div{
+    margin-top: 210px;
+}
+
+.tamanho-label{
+    width: 320px;
+    height: 45px;
+    font-style: oblique;
+}
+
+.tamanho-botao{
+    width: 230px;
+    margin-left: 45px;
+}
+
+.a{
+    height: 5px;   
+    color: white;
+}
+
+.cor-div{
+    background-color: rgb(37, 37, 37);
+}
+
+
+

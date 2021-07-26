@@ -1,0 +1,37 @@
+
+.cor-div{
+    background-color: rgb(37, 37, 37);
+}
+
+.imagem-logar{
+    height: 920px;
+    margin-left: 170px;
+}
+
+.cor-label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.posicao{
+    margin-top: 200px;
+}
+
+.posicao-texto{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tamanho-label{
+    width: 400px;
+    height: 45px;
+    font-style: oblique;
+}
+
+.tamanho-botao{
+    width: 300px;
+    margin-left: 50px;
+}
