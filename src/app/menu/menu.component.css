@@ -1,0 +1,18 @@
+.cor-nav{
+    background-color: rgb(37, 37, 37);
+}
+
+.expessura{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.estilo{
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.separar{
+    padding: 10px;
+    list-style: none;
+}

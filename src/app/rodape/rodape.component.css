@@ -1,0 +1,14 @@
+footer{
+    background-color: rgb(37, 37, 37);  
+}
+
+.estilo-texto{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.estilo-lista{
+    list-style: none;
+    padding: 20px;
+}
