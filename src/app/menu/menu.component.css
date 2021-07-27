@@ -1,5 +1,5 @@
 .cor-nav{
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(150, 150, 150);
 }
 
 .expessura{
@@ -17,4 +17,14 @@
     list-style: none;
 }
 
+.link-estilo{
+    list-style: none;
+    text-decoration: none;
+}
 
+.cor{
+    color: white;
+}
+.cor-link:hover{
+    color:  wheat;
+}
