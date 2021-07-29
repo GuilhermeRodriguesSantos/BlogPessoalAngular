@@ -1,4 +1,3 @@
-
 .cor-div{
     background-color: rgb(37, 37, 37);
 }
@@ -29,6 +28,15 @@
     width: 400px;
     height: 45px;
     font-style: oblique;
+    outline: none;
+    background-color: rgb(37, 37, 37);
+    border-bottom: 3px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .tamanho-botao{
@@ -42,3 +50,58 @@
     height: 45px;
     
 }
+
+/*foto{
+    height: 942px;
+    width: 628px;
+}
+
+
+.quadrado{
+    background-color: white;
+    height: 480px;
+    width: 480px;
+    background-color: #003D72;
+    border-radius: 25px;
+    
+    
+}
+
+.a{
+    margin-top: 70px;
+}
+
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.posicao{
+    margin-left: 400px;
+    text-align: center;
+    
+}
+
+.tamanho{
+    width: 280px;
+    height: 40px;
+    font-style: oblique;
+    background-color: #003D72;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    outline: none;
+    border-bottom: 2px solid white;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+.tamanho-botao{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}*/
