@@ -14,15 +14,15 @@
             <div class="posicao-div">
                 <h1 class="mt-5  mb-5 texto2">Pronto para Logar ?</h1>
                 <div>
-                    <input class="mb-3 tamanho-label mb-5" type="email" name="email" id="email" placeholder="Digite o seu E-mail">
+                    <input [(ngModel)]='UsuarioLogin.email' class="mb-3 tamanho-label mb-5" type="email" name="email" id="email" placeholder="Digite o seu E-mail">
                 </div>
 
                 <div>
-                    <input class="mb-3 tamanho-label mb-5" type="password" name="senha" id="senha" placeholder="Digite a sua Senha">
+                    <input [(ngModel)]='UsuarioLogin.senha' class="mb-3 tamanho-label mb-5" type="password" name="senha" id="senha" placeholder="Digite a sua Senha">
                 </div>
 
                 <div>
-                    <button  type="button" class="btn btn-outline-light tamanho-botao mt-3">Logar</button>
+                    <button  type="button" class="btn btn-outline-light tamanho-botao mt-3" (click)='logar()'>Logar</button>
                 </div>
 
                 <hr class="a">

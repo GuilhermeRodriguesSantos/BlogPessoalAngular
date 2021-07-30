@@ -14,28 +14,28 @@
                 </div>
 
                 <div>
-                    <input class="mb-5 tamanho-label" type="text" id="nome" placeholder="Digite o seu nome:"> 
+                    <input [(ngModel)]='Usuario.nome' class="mb-5 tamanho-label" type="text" id="nome" placeholder="Digite o seu nome:" > 
                 </div>
 
                 <div>
-                    <input class="mb-5 tamanho-label" type="email" id="email" placeholder="Digite o seu E-mail:"> 
+                    <input [(ngModel)]='Usuario.email' class="mb-5 tamanho-label" type="email" id="email" placeholder="Digite o seu E-mail:"> 
                 </div>
 
                 <div>
-                    <input class="mb-5 tamanho-label" type="text" id="foto" placeholder="Coloque o link da sua Foto:">
+                    <input [(ngModel)]='Usuario.foto' class="mb-5 tamanho-label" type="text" id="foto" placeholder="Coloque o link da sua Foto:">
                 </div>
 
                 <div>
-                    <input class="mb-5 tamanho-label" type="password" id="senha" placeholder="Digite a sua Senha:">
+                    <input (input)='confirmaSenha($event)' class="mb-5 tamanho-label" type="password" id="senha" placeholder="Digite a sua Senha:">
                 </div>
 
                 <div>
-                    <input class="mb-5 tamanho-label" type="password" id="senha" placeholder="Confirme a sua Senha:">
+                    <input  [(ngModel)]=' Usuario.senha' class="mb-5 tamanho-label" type="password" id="senha" placeholder="Confirme a sua Senha:">
                 </div>
 
                 <div>
                     <label class="cor-label" for="tipoUsuario">Coloque seu tipo de Usuario:</label>
-                    <select class="form-control tamanho" name="itens" id="itens">
+                    <select class="form-control tamanho" name="itens" id="itens" (change)='tipoUsuario($event)'>
 
                         <option value="selecionar">Selecione o tipo de Usuario:</option>
                         <option value="administardor">Usuario Administrador:</option>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="d-flex justify-content-right">
-                    <button type="button" class="btn btn-outline-success tamanho-botao mt-4">Cadastrar</button>
+                    <button type="button" class="btn btn-outline-success tamanho-botao mt-4" (click)='cadastrar()' >Cadastrar</button>
                     <button type="button" class="btn btn-outline-danger tamanho-botao mt-4" routerLink='/Logar'>Cancelar</button>
                 </div>
 
