@@ -1,0 +1,30 @@
+.cor-nav{
+    background-color: rgb(150, 150, 150);
+}
+
+.expessura{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.estilo{
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.separar{
+    padding: 10px;
+    list-style: none;
+}
+
+.link-estilo{
+    list-style: none;
+    text-decoration: none;
+}
+
+.cor{
+    color: white;
+}
+.cor-link:hover{
+    color:  wheat;
+}
