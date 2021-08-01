@@ -1,38 +1,38 @@
-
 <div class="container-flex">
     <div class="row">
-        <div class="col-md-6"> 
+        <div class="col-md-6 imagem">
 
-            <div class="posicao">
-                <img src="../../assets/img/login.jpg" alt="foto login" height="921px">
-            </div>
-
+        
         </div>
+            <div class="col-md-6 cor">
 
-        <div class="col-md-6  d-flex justify-content-center cor-div ">
-
-            <div class="posicao-div">
-                <h1 class="mt-5  mb-5 texto2">Pronto para Logar ?</h1>
+                <div class="tamanho">
                 <div>
-                    <input [(ngModel)]='UsuarioLogin.email' class="mb-3 tamanho-label mb-5" type="email" name="email" id="email" placeholder="Digite o seu E-mail">
+                    <h2 class="texto">Pronto para Logar?</h2>
                 </div>
 
                 <div>
-                    <input [(ngModel)]='UsuarioLogin.senha' class="mb-3 tamanho-label mb-5" type="password" name="senha" id="senha" placeholder="Digite a sua Senha">
+                    <input class="label mt-4" type="email" id="email" placeholder="Digite seu E-mail:">
                 </div>
 
                 <div>
-                    <button  type="button" class="btn btn-outline-light tamanho-botao mt-3" (click)='logar()'>Logar</button>
+                    <input class="label mt-4 mb-4" type="password" id="senha" placeholder="Digite sua Senha:">
                 </div>
 
-                <hr class="a">
+                <div >
+                    <ul class="d-flex justify-content-center mt-2 separa">
+                        <li class="p-3"><button type="button" class="btn btn-outline-secondary tm">Logar</button></li>
+                    </ul>
+                </div>
 
                 <div>
-                    <p class="texto"> Não tem uma conta ? | <a routerLink='/Cadastrar' > Cadastre-se </a> </p>
+                    <h4> Não possui uma Senha? | <a href=""> Cadastre-se</a></h4>
                 </div>
+                
 
             </div>
-           
+        </div>  
 
     </div>
+
 </div>

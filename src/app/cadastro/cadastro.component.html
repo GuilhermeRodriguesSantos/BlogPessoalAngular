@@ -1,98 +1,60 @@
-<div class="container-flex justify-content-center">
-    <div class="row">
-        <div class="col-md-6">
-            <div>
-            <img class="imagem-logar" src="../../assets/img/cadastro1.jpg" alt="Imagem Cadastro">
-            </div>
-        </div>
-
-        <div class="col-md-6 cor-div d-flex justify-content-center">
-            
-            <div class="posicao">
-                <div>
-                    <h1 class="text-white posicao-texto mb-5">Pronto para se Cadastrar?</h1>
-                </div>
-
-                <div>
-                    <input [(ngModel)]='Usuario.nome' class="mb-5 tamanho-label" type="text" id="nome" placeholder="Digite o seu nome:" > 
-                </div>
-
-                <div>
-                    <input [(ngModel)]='Usuario.email' class="mb-5 tamanho-label" type="email" id="email" placeholder="Digite o seu E-mail:"> 
-                </div>
-
-                <div>
-                    <input [(ngModel)]='Usuario.foto' class="mb-5 tamanho-label" type="text" id="foto" placeholder="Coloque o link da sua Foto:">
-                </div>
-
-                <div>
-                    <input (input)='confirmaSenha($event)' class="mb-5 tamanho-label" type="password" id="senha" placeholder="Digite a sua Senha:">
-                </div>
-
-                <div>
-                    <input  [(ngModel)]=' Usuario.senha' class="mb-5 tamanho-label" type="password" id="senha" placeholder="Confirme a sua Senha:">
-                </div>
-
-                <div>
-                    <label class="cor-label" for="tipoUsuario">Coloque seu tipo de Usuario:</label>
-                    <select class="form-control tamanho" name="itens" id="itens" (change)='tipoUsuario($event)'>
-
-                        <option value="selecionar">Selecione o tipo de Usuario:</option>
-                        <option value="administardor">Usuario Administrador:</option>
-                        <option value="normal">Usuario Normal:</option>
-
-                    </select>
-                </div>
-
-                <div class="d-flex justify-content-right">
-                    <button type="button" class="btn btn-outline-success tamanho-botao mt-4" (click)='cadastrar()' >Cadastrar</button>
-                    <button type="button" class="btn btn-outline-danger tamanho-botao mt-4" routerLink='/Logar'>Cancelar</button>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<!--
 <div class="container-fluid">
+
     <div class="row">
-        <div class="col-md-8 ">
+        <div class="col-md-6 imagem">
+        </div>
 
-            <div class="descer">
-                <p class="texto">Cadastre-se</p>
+        <div class="col-md-6 cor">
+
+        <div class="texto">
+            <div>
+                <h3>Pronto para Cadastrar?</h3>
             </div>
 
-            <div  class="quadrado posicao">
-
-                        <div class="">
-                            <input class="a tamanho" type="text" id="nome" placeholder="Usuário">
-                        </div>
-                        <div>
-                            <input class="mt-5 tamanho" type="email" id="email" placeholder="Email">
-                        </div>
-                        <div>
-                            <input class="mt-5 tamanho" type="password" id="senha" placeholder="Senha">
-                        </div>
-                        <div>
-                            <input class="mt-5 mb-4 tamanho" type="password" id="confirmaSenha" placeholder="Confirme sua Senha">
-                        </div>
-
-                        <div>
-                            <button type="button" class="btn btn-outline-light tamanho-botao">Primary</button>
-                        </div>
-
-                
+            <div>
+                <input class="lb mt-2 mb-4" type="text" id="nome" placeholder="Digite seu Nome:">
             </div>
+
+            <div>
+                <input class="lb mb-4" type="email" id="email" placeholder="Digite seu E-mail:">
+            </div>
+
+            
+            <div>
+                <input class="lb mb-4" type="text" id="foto" placeholder="Coloque o link da sua Foto?:">
+            </div>
+
+            
+            <div>
+                <input class="lb mb-4" type="password" id="senha" placeholder="Digite sua Senha::">
+            </div>
+
+            
+            <div>
+                <input class="lb mb-4" type="password" id="confSenha" placeholder="Confirme sua Senha:">
+            </div>
+            
+            <div class="op">
+                <label for="Usuario">Tipo de Usuario:</label>
+               <select class="form-control" name="tipo" id="tipo">
+                    <option>Selecione seu tipo de Usuario</option>
+                    <option value="Adiministrador">Administrador</option>
+                    <option value="Nomal">Normal</option>
+                </select>
+            </div>
+
+            <div>
+                <ul class="d-flex justify-content-center mt-3 ul ">
+                    <li class="p-2"><button  type="button" class="btn btn-outline-secondary tm-b">Cadastrar</button></li>
+                    <li class="p-2"><button type="button" class="btn btn-outline-secondary tm-b">Logar</button></li>
+                </ul>
+            </div>
+
+        </div>    
 
         </div>
 
-        <div class="col-md-4">
-            <img class="foto" src="../../assets/img/b0bc92b2aa20b8ad2a9db25ee44ebec3.gif" alt="">
-        </div>
+
     </div>
-</div>
 
--->
+</div>

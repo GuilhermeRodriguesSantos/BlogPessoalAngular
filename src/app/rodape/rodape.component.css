@@ -1,15 +1,18 @@
-footer{
-    background-color: rgb(37, 37, 37);  
+.arrumar-itens{
+    display: flex;
+    justify-content: space-around;
 }
 
-.estilo-texto{
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+.aliando-texto{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold
 }
 
-.estilo-lista{
+ul{
     list-style: none;
-    padding: 20px;
 }
 
+.cor{
+    background-color: bisque;
+}

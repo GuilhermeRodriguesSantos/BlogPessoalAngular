@@ -1,54 +1,37 @@
-.posicao{
+.imagem{
+    background-image: url(../../assets/Imagens/minions.jpg);
+
+    min-height: 640px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.tm{
+width: 240px;
+
+}
+.cor{
+    background-color: rgb(88, 80, 80);
+}
+
+.tamanho{
+    margin-top: 150px;
     text-align: center;
-}
-
-.texto{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.texto2{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: bold;
-}
-
-.posicao-div{
-    margin-top: 210px;
-}
-
-.tamanho-label{
-    width: 320px;
-    height: 45px;
-    font-style: oblique;
-    outline: none;
-    background-color: rgb(37, 37, 37);
-    border-bottom: 3px solid white;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-.tamanho-botao{
-    width: 230px;
-    margin-left: 45px;
-   
-}
-
-.a{
-    height: 5px;   
     color: white;
 }
 
-.cor-div{
-    background-color: rgb(37, 37, 37);
+.label{
+  border-bottom: 5px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-style: oblique;
+  width: 300px;
+  background-color:rgb(88, 80, 80);
 }
 
-
-
+li{
+    list-style: none;
+}
