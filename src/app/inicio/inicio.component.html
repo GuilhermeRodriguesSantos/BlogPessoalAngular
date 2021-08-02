@@ -1,1 +1,95 @@
-<p>inicio works!</p>
+<div class="container-fluid">
+
+    <div class="row bg-secondary d-flex align-items-center">
+        <div class="col-md-6">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 text-white">
+                <h1 class="texto">Seja bem vindo!</h1>
+                <h5 class="texto2"> Diga aqui seus sentimentos e pensamentos</h5>
+            </div>
+            </div>
+
+            <div class="row c-flex justify-content-center mt-3 mb-5">
+                <div class="col-md-6">
+
+                    <button class="btn btn-light bt" data-bs-toggle="modal" data-bs-target="#nova-postagem">  Nova Postagem</button>
+                    <a class="btn  btn-outline-light" href="#postagens"> Ver Posategens</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="../../assets/Imagens/Video game developer-bro.png" alt="" width="500px" height="500px">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5" id="postagens">
+    
+    <nav>
+        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+          <button class="nav-link active text-secondary tx" id="TodasasPostagens" data-bs-toggle="tab" data-bs-target="#nav-TodasasPostagens" type="button" role="tab" aria-controls="nav-TodasasPostagens" aria-selected="true">Todas as Postagens</button>
+
+          <button class="nav-link text-secondary tx" id="MinhasPostagens" data-bs-toggle="tab" data-bs-target="#nav-MinhasPostagens" type="button" role="tab" aria-controls="nav-MinhasPostagens" aria-selected="false">Minhas Postagens</button>
+
+          <button class="nav-link text-secondary tx" id="PosatensporTema" data-bs-toggle="tab" data-bs-target="#nav-PosatensporTema" type="button" role="tab" aria-controls="nav-PosatensporTema" aria-selected="false">Postagens por tema</button>
+        </div>
+
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-TodasasPostagens" role="tabpanel" aria-labelledby="nav-TodasasPostagens-tab">Todas as Postagens</div>
+
+        <div class="tab-pane fade" id="nav-MinhasPostagens" role="tabpanel" aria-labelledby="nav-MinhasPostagens-tab">Minhas Postagen</div>
+
+        <div class="tab-pane fade" id="nav-PosatensporTema" role="tabpanel" aria-labelledby="nav-PosatensporTema-tab">Postagens por tema</div>
+
+      </div>
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="nova-postagem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Nova Postagem</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      <div class="modal-body">
+
+        <div class="form-group">
+            <label for="Titulo">Titulo</label>
+            <input type="text" class="form-control" id="titulo" placeholder="Digite o titulo">
+        </div>
+
+        <div class="form-group">
+          <label for="Texto">Texto</label>
+       <textarea class="form-control" name="Texto" id="Texto"  rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="Titulo">Escolha ou tema ou <a href="">Cadastre um novo</a></label>
+      <select name="tema" id="tema" class="form-control">
+
+        <option value="
+        ">Temas</option>
+      </select>
+
+    </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success">Publicar</button>
+      </div>
+    </div>
+  </div>
+</div>

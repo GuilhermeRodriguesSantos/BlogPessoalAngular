@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light color">
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <div class="container-fluid ">
-        <img src="../../assets/Imagens/pp.jpg" alt="" width="90px " class="foto">
+        <img src="{{foto}}" alt="" width="90px " class="foto">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
           <li class="nav-item texto" >
-              <h5>Guilherme Rodrigues</h5>
+              <h5> oie, {{nome}} !</h5>
           </li>
 
           
@@ -21,9 +21,8 @@
         </li>
 
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex"> 
+          <button type="button" class="btn btn-outline-light tm"  (click)='sair()'>Sair</button>
         </form>
       </div>
     </div>
