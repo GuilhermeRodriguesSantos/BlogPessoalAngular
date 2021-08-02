@@ -12,21 +12,21 @@
                 </div>
 
                 <div>
-                    <input class="label mt-4" type="email" id="email" placeholder="Digite seu E-mail:">
+                    <input [(ngModel)] = 'usuarioLogin.email' class="label mt-4" type="email" id="email" placeholder="Digite seu E-mail:">
                 </div>
 
                 <div>
-                    <input class="label mt-4 mb-4" type="password" id="senha" placeholder="Digite sua Senha:">
+                    <input [(ngModel)] = 'usuarioLogin.senha' class="label mt-4 mb-4" type="password" id="senha" placeholder="Digite sua Senha:">
                 </div>
 
                 <div >
                     <ul class="d-flex justify-content-center mt-2 separa">
-                        <li class="p-3"><button type="button" class="btn btn-outline-secondary tm">Logar</button></li>
+                        <li class="p-3"><button type="button" class="btn btn-outline-secondary tm" (click)= 'logar()' >Logar</button></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4> Não possui uma Senha? | <a href=""> Cadastre-se</a></h4>
+                    <h4> Não possui uma Senha? | <a routerLink="/Cadastrar"> Cadastre-se</a></h4>
                 </div>
                 
 

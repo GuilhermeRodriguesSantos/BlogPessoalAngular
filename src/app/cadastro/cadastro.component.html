@@ -12,31 +12,31 @@
             </div>
 
             <div>
-                <input class="lb mt-2 mb-4" type="text" id="nome" placeholder="Digite seu Nome:">
+                <input  [(ngModel)] = 'usuario.nome' class="lb mt-2 mb-4" type="text" id="nome" placeholder="Digite seu Nome:">
             </div>
 
             <div>
-                <input class="lb mb-4" type="email" id="email" placeholder="Digite seu E-mail:">
-            </div>
-
-            
-            <div>
-                <input class="lb mb-4" type="text" id="foto" placeholder="Coloque o link da sua Foto?:">
+                <input [(ngModel)] = 'usuario.email' class="lb mb-4" type="email" id="email" placeholder="Digite seu E-mail:">
             </div>
 
             
             <div>
-                <input class="lb mb-4" type="password" id="senha" placeholder="Digite sua Senha::">
+                <input [(ngModel)] = 'usuario.foto' class="lb mb-4" type="text" id="foto" placeholder="Coloque o link da sua Foto?:">
             </div>
 
             
             <div>
-                <input class="lb mb-4" type="password" id="confSenha" placeholder="Confirme sua Senha:">
+                <input (input)= 'confirmSenha($event)' class="lb mb-4" type="password" id="senha" placeholder="Digite sua Senha::">
+            </div>
+
+            
+            <div>
+                <input [(ngModel)] = 'usuario.senha' class="lb mb-4" type="password" id="confSenha" placeholder="Confirme sua Senha:">
             </div>
             
-            <div class="op">
+            <div>
                 <label for="Usuario">Tipo de Usuario:</label>
-               <select class="form-control" name="tipo" id="tipo">
+               <select class="form-control" name="tipo" id="tipo" (change)='tipoUsuario($event)'>
                     <option>Selecione seu tipo de Usuario</option>
                     <option value="Adiministrador">Administrador</option>
                     <option value="Nomal">Normal</option>
@@ -45,8 +45,8 @@
 
             <div>
                 <ul class="d-flex justify-content-center mt-3 ul ">
-                    <li class="p-2"><button  type="button" class="btn btn-outline-secondary tm-b">Cadastrar</button></li>
-                    <li class="p-2"><button type="button" class="btn btn-outline-secondary tm-b">Logar</button></li>
+                    <li class="p-2"><button  type="button" class="btn btn-outline-secondary tm-b"  (click)='cadastrar()'>Cadastrar</button></li>
+                    <li class="p-2"><button type="button" class="btn btn-outline-secondary tm-b" routerLink='/Logar'>Logar</button></li>
                 </ul>
             </div>
 
