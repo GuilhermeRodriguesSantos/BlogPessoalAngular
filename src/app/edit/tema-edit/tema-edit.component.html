@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-decondary">atualizar Tema:</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label for="nome"> Novo Model: </label>
+                <input type="text" value="nome" class="form-control" id="nome" [(ngModel)] = 'tema.nome'>
+            </div>
+
+            <div class="form-group">
+                <label for="nome"> Nova descricao: </label>
+                <input type="text" value="descricao" class="form-control" id="descricao" [(ngModel)] = 'tema.descricao'>
+            </div>
+
+
+            <div class="d-flex justify-content-center mt-3 mb-3">
+                <button class="btn btn-danger"  routerLink='/Tema'>Canceler</button>
+                <button class="btn btn-success espaco" (click)='atualizar()'>Editar</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>

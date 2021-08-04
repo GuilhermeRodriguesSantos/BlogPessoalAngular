@@ -54,8 +54,8 @@
                     <td> {{tema.nome}} </td>
                     <td> {{tema.descricao}} </td>
                     <td class="d-flex justify-contente-end">
-                      <button class="btn btn-info lado"> Editar </button>
-                      <button class="btn btn-danger"> Excluir</button>
+                      <button class="btn btn-info lado" [routerLink]="['/editar-Tema', tema.id]"> Editar </button>
+                      <button class="btn btn-danger" [routerLink]="['/deletar-Tema', tema.id]"> Excluir</button>
                     </td>
                   </tr>
                 </tbody>

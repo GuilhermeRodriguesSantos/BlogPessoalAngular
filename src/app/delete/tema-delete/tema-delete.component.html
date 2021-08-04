@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center text-primary">
+
+                Você tem certeza de apagar esse tema? todas as postagens relacionada a ela tambem serão apagadas.
+            </h4>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <h5 class="text-center text-info"> Nome: {{tema.nome}} </h5>
+            <h5 class="text-center text-info"> Descrição: {{tema.descricao}} </h5>
+
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-12 d-flex justify-content-center">
+            <button class="btn btn-danger" (click)='apagar()'>Sim</button>
+            <button class="btn btn-success espaco"  routerLink='/Tema'> Não</button>
+
+        </div>
+    </div>
+</div>
