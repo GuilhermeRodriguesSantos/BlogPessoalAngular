@@ -22,7 +22,7 @@ export class AuthService {
   }
 
   Logar(usuarioLogin: UsuarioLogin):Observable<UsuarioLogin>{
-    return this.http.put<UsuarioLogin>('http://localhost:8080/usuario/Logar' , usuarioLogin)
+    return this.http.post<UsuarioLogin>('http://localhost:8080/usuario/Logar' , usuarioLogin)
   }
   
   logado(){

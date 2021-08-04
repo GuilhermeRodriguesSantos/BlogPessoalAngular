@@ -5,5 +5,5 @@ export class Tema{
     public id: number
     public nome: String
     public descricao: String
-    public postagem: Postagem[]
+    public postagens: Postagem[]
 }
