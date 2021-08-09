@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     this.auth.Logar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
       this.usuarioLogin = resp
 
-      environment.idUsuario = this.usuarioLogin.idUsuario
+      environment.idUsuario = this.usuarioLogin.id
       environment.nome = this.usuarioLogin.nome
       environment.token = this.usuarioLogin.token
       environment.foto = this.usuarioLogin.foto

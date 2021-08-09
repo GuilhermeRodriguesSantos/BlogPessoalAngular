@@ -39,7 +39,19 @@
 
       </nav>
       <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-TodasasPostagens" role="tabpanel" aria-labelledby="nav-TodasasPostagens-tab">Todas as Postagens</div>
+        <div class="tab-pane fade show active" id="nav-TodasasPostagens" role="tabpanel" aria-labelledby="nav-TodasasPostagens-tab">
+
+          <div class="card-columns">
+              <div class="card text-center" *ngFor= 'let item of listaPostagens'>
+                <div class="card-body">
+
+                  <h5 class="card-title"> {{item.nome}} </h5>
+                  <p class="card-text"> {{item.descricao}} </p>
+                </div>
+              </div>
+          </div>
+
+        </div>
 
         <div class="tab-pane fade" id="nav-MinhasPostagens" role="tabpanel" aria-labelledby="nav-MinhasPostagens-tab">Minhas Postagen</div>
 
@@ -65,21 +77,21 @@
       <div class="modal-body">
 
         <div class="form-group">
-            <label for="Titulo">Titulo</label>
-            <input type="text" class="form-control" id="titulo" placeholder="Digite o titulo">
+            <label  for="Titulo">Titulo</label>
+            <input  [(ngModel)] = 'postagem.nome' type="text" class="form-control" id="titulo" placeholder="Digite o titulo">
         </div>
 
-        <div class="form-group">
-          <label for="Texto">Texto</label>
-       <textarea class="form-control" name="Texto" id="Texto"  rows="3"></textarea>
+        <div   class="form-group">
+          <label  for="Texto">descricao:</label>
+       <textarea  [(ngModel)] = 'postagem.descricao' class="form-control" name="descricao"  id="descrocao"  rows="3"></textarea>
       </div>
 
       <div class="form-group">
         <label for="Titulo">Escolha ou tema ou <a data-bs-dismiss="modal" routerLink = '/Tema'>Cadastre um novo</a></label>
-      <select name="tema" id="tema" class="form-control">
+      <select name="tema" id="tema" class="form-control" [(ngModel)] = 'idTema' (change)='findByIdTema()'>
 
-        <option value="
-        ">Temas</option>
+        <option *ngFor='let item of listaTemas' value="{{item.id}}
+        ">{{item.descricao}} </option>
       </select>
 
     </div>
@@ -88,7 +100,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-success">Publicar</button>
+        <button type="button" class="btn btn-success" (click)='publicar()' data-bs-dismiss="modal">Publicar</button>
       </div>
     </div>
   </div>
