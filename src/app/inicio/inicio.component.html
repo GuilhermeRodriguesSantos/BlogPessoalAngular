@@ -32,7 +32,7 @@
 
           <button class="nav-link active text-secondary tx" id="TodasasPostagens" data-bs-toggle="tab" data-bs-target="#nav-TodasasPostagens" type="button" role="tab" aria-controls="nav-TodasasPostagens" aria-selected="true">Todas as Postagens</button>
 
-          <button class="nav-link text-secondary tx" id="MinhasPostagens" data-bs-toggle="tab" data-bs-target="#nav-MinhasPostagens" type="button" role="tab" aria-controls="nav-MinhasPostagens" aria-selected="false">Minhas Postagens</button>
+          <button (click)='findByIdUsuario()' class="nav-link text-secondary tx" id="MinhasPostagens" data-bs-toggle="tab" data-bs-target="#nav-MinhasPostagens" type="button" role="tab" aria-controls="nav-MinhasPostagens" aria-selected="false">Minhas Postagens</button>
 
           <button class="nav-link text-secondary tx" id="PosatensporTema" data-bs-toggle="tab" data-bs-target="#nav-PosatensporTema" type="button" role="tab" aria-controls="nav-PosatensporTema" aria-selected="false">Postagens por tema</button>
         </div>
@@ -53,9 +53,29 @@
 
         </div>
 
-        <div class="tab-pane fade" id="nav-MinhasPostagens" role="tabpanel" aria-labelledby="nav-MinhasPostagens-tab">Minhas Postagen</div>
+        <div class="tab-pane fade" id="nav-MinhasPostagens" role="tabpanel" aria-labelledby="nav-MinhasPostagens-tab">
+          <div class="card-columns">
+            <div class="card text-center" *ngFor= 'let usu of usuario.postagens'>
+              <div class="card-body">
+                <h5 class="card-title"> {{usu.nome}} </h5>
+                <p class="card-text"> {{usu.descricao}} </p>
+              </div>
+            </div>
+        </div>
 
-        <div class="tab-pane fade" id="nav-PosatensporTema" role="tabpanel" aria-labelledby="nav-PosatensporTema-tab">Postagens por tema</div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-PosatensporTema" role="tabpanel" aria-labelledby="nav-PosatensporTema-tab">
+
+          <div class="card-columns" *ngFor='let tema of listaTemas'>
+            <div class="card text-center" *ngFor= 'let usu of tema.postagem'>
+              <div class="card-body">
+                <h5 class="card-title"> {{usu.nome}} </h5>
+                <p class="card-text"> {{usu.descricao}} </p>
+              </div>
+            </div>
+        </div>
+        </div>
 
       </div>
 </div>

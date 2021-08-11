@@ -24,6 +24,10 @@ export class AuthService {
   Logar(usuarioLogin: UsuarioLogin):Observable<UsuarioLogin>{
     return this.http.post<UsuarioLogin>('http://localhost:8080/usuario/Logar' , usuarioLogin)
   }
+
+  getByIdUsuario(id: number): Observable<Usuario>{
+    return this.http.get<Usuario>(`http://localhost:8080/usuario/${id}/BuscarPeloId`)
+  }
   
   logado(){
     let ok: boolean = false
