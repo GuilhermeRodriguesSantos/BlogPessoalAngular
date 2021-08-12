@@ -59,8 +59,13 @@
               <div class="card-body">
                 <h5 class="card-title"> {{usu.nome}} </h5>
                 <p class="card-text"> {{usu.descricao}} </p>
+
+
+                <a [routerLink]="['/editar', usu.idPostagem]"  class="text-info" href="">Editar</a>
+                <a [routerLink]="['/deletar', usu.idPostagem]" class="text-danger ta" href="">Apagar</a>
               </div>
             </div>
+
         </div>
 
         </div>
